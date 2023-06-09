@@ -6,8 +6,11 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
-  background: url(Logo.jpg);
-  background-size: 30%;
+  background: url(https://stackblitz.com/files/web-platform-bgk3fh/github/captainkiller83/website-gamma/Jan-Ole/IMG_1850.jpeg);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: -75%;
+  background-repeat: no-repeat;
 }
 
 nav {
@@ -18,7 +21,7 @@ nav {
   padding: 0.5rem;
   gap: 0.5rem;
   border-bottom: solid 1px #aaa;
-  background-color: #eee;
+  background-color:white;
 }
 
 nav a {
@@ -29,7 +32,7 @@ nav a {
   border: solid 1px #aaa;
   text-align: center;
   text-decoration: none;
-  color: #555;
+  color:black;
 }
 
 nav a[aria-current='page'] {
@@ -38,10 +41,11 @@ nav a[aria-current='page'] {
 }
 
 main {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 h1 {
   font-weight: bold;
   font-size: 1.5rem;
+  text-align: center;
 }
