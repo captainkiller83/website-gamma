@@ -7,9 +7,9 @@ body {
   font-family: system-ui, sans-serif;
   color: black;
   background: url(https://stackblitz.com/files/web-platform-bgk3fh/github/captainkiller83/website-gamma/Jan-Ole/IMG_1850.jpeg);
-  background-size: cover;
+  background-size: 25%;
   background-position-x: center;
-  background-position-y: -75%;
+  background-position-y:5cm;
   background-repeat: no-repeat;
 }
 
