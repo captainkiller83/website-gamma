@@ -6,7 +6,8 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
-  background-color: magenta;
+  background: url(Logo.jpg);
+  background-size: 30%;
 }
 
 nav {
