@@ -15,17 +15,19 @@ main {
 }
 
 body {
-  display: flex;
   justify-content: center;
+  overflow-x: hidden;
+  margin: 0;
 }
 
 nav {
-  width: 85vw;
+  width: 100vw !important;
+  height: 1vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   z-index: 999;
-  position: sticky;
+  position: absolute;
 }
 
 :root {
@@ -41,20 +43,69 @@ html {
   font-family: 'Flow Circular';
 }
 
+.content {
+  width: 85vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 #background {
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: -1;
+  overflow-y: hidden;
 }
 
 #circ1,
 #circ2 {
   width: 20vw;
   height: 20vw;
-  background: #ff2ed2;
   border-radius: 50%;
+  transform-origin: bottom;
+}
+
+/* animation */
+#circ1 {
+  animation: circ1 3s forwards;
+  background: #ff2ed2;
+}
+
+#circ2 {
+  animation: circ2 5s forwards;
+  background: #82ff2e;
+}
+
+@keyframes circ1 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(180deg) scale(1);
+  }
+}
+
+/* flying in circle */
+@keyframes circ2 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  20% {
+    transform: translate(0, 0) scale(1.1);
+  }
+  100% {
+    transform: translate(0, 400px) scale(1.2);
+  }
+}
+
+img {
+  position: absolute;
 }
