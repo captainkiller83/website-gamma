@@ -1,0 +1,86 @@
+*{
+  text-align: center;
+  align-content: center;
+  box-align: center;
+  ruby-align: center;
+  
+}
+body{
+    background-color: magenta;
+  
+  }
+  #clock {
+    font-size: 48px;
+    text-align: center;
+  }
+  
+  .clocks{
+    position:relative;
+    background-color: azure;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid;
+    border-color: greenyellow;
+  }
+  .hour{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: calc(50% - 10px);
+    width: 5%;
+    background-color: black;
+    transform-origin: center top;
+    border-radius: 5px;
+  }
+  .minute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: calc(50% - 30px);
+    width: 5%;
+    background-color: green;
+    transform-origin: center top;
+    border-radius: 5px;
+  }
+  .second{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: calc(50% - 50px);
+    width: 5%;
+    background-color:violet;
+    transform-origin: center top;
+    border-radius: 5px;
+  }
+  .info{
+    font-size: 10px;
+    color: lightgray;
+  }
+  .dot{
+    position: absolute;
+    top: calc(50% - 7.5px);
+    left: calc(50% - 2.5px);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: black;
+  }
+  .hour-marker {
+    position: absolute;
+        top: calc(50% - 0.5px);
+        left: calc(50% - 5px);
+        transform: translate(-50%, -50%);
+        width: 10px;
+        height: 2px;
+        background-color: #000;
+        transform-origin: bottom center;
+  }
+  .whitedot{
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    height: 30px;
+    width: 30px;
+    background-color: white;
+  }
