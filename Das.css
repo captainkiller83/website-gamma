@@ -1,0 +1,18 @@
+body {
+  background-color: gray;
+  color: black;
+}
+
+a {
+  position: relative;
+  width: 9rem;
+  height: 3rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: solid 1px black;
+  color: black;
+  background-color: red;
+  text-decoration: none;
+  text-align: center;
+  top: 0.5rem;
+}
