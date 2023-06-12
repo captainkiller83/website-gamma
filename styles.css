@@ -5,13 +5,7 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  color: black;
-  background: url('Logo.jpg');
-  /*background-size: 25%;
-  background-position-x: center;
-  background-position-y:5cm;
-  background-repeat: no-repeat;
-  */
+  color: black;  
 }
 
 nav {
@@ -42,7 +36,13 @@ nav a[aria-current='page'] {
 }
 
 main {
+  height: 80vh;
   padding: 0.5rem;
+  background: url('./IMG_1850.jpeg');
+  background-size: cover;
+  background-position-x: center;
+  background-position-y:center;
+  background-repeat: no-repeat;
 }
 
 h1 {
