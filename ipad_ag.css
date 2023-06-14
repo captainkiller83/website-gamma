@@ -16,7 +16,7 @@ nav {
   padding: 0.5rem;
   gap: 0.5rem;
   border-bottom: solid 1px #aaa;
-  background-color:white;
+  background-image: linear-gradient(115deg, red, orange, yellow, lightgreen, green, cyan, blue);
 }
 
 nav a {
@@ -31,8 +31,8 @@ nav a {
 }
 
 nav a[aria-current='page'] {
-  color: #000;
-  background-color: #d4d4d4;
+  color:white;
+  background-image: linear-gradient(115deg, lightgreen, green, cyan,);
 }
 
 main {
