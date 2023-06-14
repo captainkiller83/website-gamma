@@ -16,7 +16,7 @@ nav {
   padding: 0.5rem;
   gap: 0.5rem;
   border-bottom: solid 1px #aaa;
-  background-image: linear-gradient(115deg, red, orange, yellow, lightgreen, green, cyan, blue);
+  background-image: linear-gradient(115deg, red, orange, yellow, lightgreen, cyan, blue);
 }
 
 nav a {
