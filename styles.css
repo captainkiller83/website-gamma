@@ -101,7 +101,7 @@ h1 {
 }
 
 #header > div {
-    margin: 0;
+    margin: 0 0 0 1vw;
     white-space: nowrap;
     width: 200vw;
     height: 10rem;
