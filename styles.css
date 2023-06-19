@@ -113,3 +113,7 @@ h1 {
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(to right, #9cc836a9, #00000000 100%);
 }
+
+h2 {
+  text-align: center;
+}
