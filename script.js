@@ -10,7 +10,8 @@ document.onscroll = () => {
             { transform: `translateY(${window.scrollY * parallax.dataset.factor}px)` }
         ], {
             duration: parseInt(parallax.dataset.duration),
-            fill: 'forwards'
+            fill: 'forwards',
+            easing: 'ease-in'
         });
     });
 
