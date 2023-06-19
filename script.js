@@ -10,7 +10,8 @@ document.onscroll = () => {
             { transform: `translateY(${window.scrollY * parallax.dataset.factor}px)` }
         ], {
             duration: parseInt(parallax.dataset.duration),
-            fill: 'forwards'
+            fill: 'forwards',
+            easing: 'ease-in'
         });
     });
 
@@ -24,5 +25,11 @@ document.onscroll = () => {
     if (window.scrollY > fade.offsetTop - window.innerHeight) {
                 fade.style.setProperty('--opacity', 1 - (window.scrollY - fade.offsetTop + window.innerHeight) / window.innerHeight);
             }
+    });
+    // jump to next section on scroll
+    document.querySelectorAll('.section').forEach((section) => {
+        if (window.scrollY > section.offsetTop + section.offsetHeight - window.innerHeight) {
+            window.scrollTo(0, section.offsetTop + section.offsetHeight);
+        }
     });
 }
