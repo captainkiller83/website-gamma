@@ -26,10 +26,4 @@ document.onscroll = () => {
                 fade.style.setProperty('--opacity', 1 - (window.scrollY - fade.offsetTop + window.innerHeight) / window.innerHeight);
             }
     });
-    // jump to next section on scroll
-    document.querySelectorAll('.section').forEach((section) => {
-        if (window.scrollY > section.offsetTop + section.offsetHeight - window.innerHeight) {
-            window.scrollTo(0, section.offsetTop + section.offsetHeight);
-        }
-    });
 }
