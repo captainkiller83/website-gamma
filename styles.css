@@ -144,3 +144,12 @@ h1 {
 h2 {
   text-align: center;
 }
+.end{
+    background-color: #9cc836a9;
+    align-items: center;
+}
+.link2 a{
+    font-size: medium;
+    text-align: center;
+    text-decoration: none;
+}
