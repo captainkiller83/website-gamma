@@ -72,6 +72,6 @@ for (let element of parallaxElements) {
         orientation: element.dataset.orientation ? element.dataset.orientation : 'down',
         scale: (element.dataset.factor+1)*1.5,
         overflow: true,
-        delay: 0.5,
+        delay: element.dataset.duration/100,
     });
 }
