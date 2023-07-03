@@ -24,7 +24,6 @@ nav {
   border-bottom: solid 1px #aaa;
   background: url("./nav.png");
   background-repeat: no-repeat;
-  background-size: center;
   min-height: 11rem;
   background-color: lawngreen;
   
@@ -137,6 +136,12 @@ h1 {
     justify-content: flex-start;
     overflow-x: hidden;
 }
+
+.parallax {
+    will-change: scroll-position;
+    transform: var(--transform);
+}
+
 h2 {
   text-align: center;
 }
