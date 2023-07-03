@@ -6,14 +6,17 @@
   
 }
 body{
-    background-color: magenta;
+    background-color: '#d4d5d3';
   
   }
   #clock {
     font-size: 48px;
     text-align: center;
   }
-  
+  .center{
+    position:relative;
+    left: 50%;
+  }
   .clocks{
     position:relative;
     background-color: azure;
@@ -22,6 +25,7 @@ body{
     border-radius: 50%;
     border: 5px solid;
     border-color: greenyellow;
+    right: 100px;
   }
   .hour{
     position: absolute;
