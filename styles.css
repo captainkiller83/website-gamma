@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Geologica', sans-serif;
@@ -68,7 +72,9 @@ h1 {
     align-items: center;
     justify-content: center;
     fill: none !important;
+    /*
     transform: scale(.8);
+    */
     transform-origin: top;
 }
 
@@ -99,7 +105,7 @@ h1 {
     align-items: flex-start;
     justify-content: left;
     height: 100vh;
-    font-size: 10rem;
+    font-size: 20vmin;
     margin: 0;
     overflow-x: hidden;
 }
@@ -108,7 +114,7 @@ h1 {
     margin: 0 0 0 1vw;
     white-space: nowrap;
     width: 200vw;
-    height: 10rem;
+    height: 20vmin;
 }
 
 .disabled {
@@ -116,13 +122,25 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(to right, #9cc836a9, #00000000 100%);
+    left: 1.5vw;
+    position: absolute;
+    z-index: -99;
 }
 
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: hidden;
+}
 h2 {
   text-align: center;
 }
 .end{
-    background-color: coral;
+    background-color: #9cc836a9;
     align-items: center;
 }
 .link2 a{
