@@ -1,5 +1,5 @@
 body {
-  background-color: gray;
+  background-color: #D2D2D2;
   color: black;
 }
 
@@ -11,8 +11,14 @@ a {
   border-radius: 0.5rem;
   border: solid 1px black;
   color: black;
-  background-color: red;
+  background-color:gray;
   text-decoration: none;
   text-align: center;
   top: 0.5rem;
 }
+ div {
+   background-color: white;
+   padding-top: 50%;
+   border: solid 1px black;
+   
+ }
