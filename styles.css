@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Geologica', sans-serif;
@@ -11,30 +15,31 @@ body {
 }
 
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-    gap: 0.5rem;
-    border-bottom: solid 1px #aaa;
-    background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  border-bottom: solid 1px #aaa;
+  min-height: 11rem;
+  background: lawngreen url("./nav.png") no-repeat;
 }
 
 nav a {
-    display: inline-block;
-    min-width: 9rem;
-    padding: 0.5rem;
-    border-radius: 0.2rem;
-    border: solid 1px #aaa;
-    text-align: center;
-    text-decoration: none;
-    color: black;
+  display: inline-block;
+  min-width: 9rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  text-decoration: none;
+  color:black;
+  background-color: lightgoldenrodyellow;
 }
 
 nav a[aria-current='page'] {
-    color: #000;
-    background-color: #d4d4d4;
+  color: #000;
+  background-color: goldenrod;
 }
 
 main {
@@ -64,7 +69,9 @@ h1 {
     align-items: center;
     justify-content: center;
     fill: none !important;
+    /*
     transform: scale(.8);
+    */
     transform-origin: top;
 }
 
@@ -95,7 +102,7 @@ h1 {
     align-items: flex-start;
     justify-content: left;
     height: 100vh;
-    font-size: 10rem;
+    font-size: 20vmin;
     margin: 0;
     overflow-x: hidden;
 }
@@ -104,7 +111,7 @@ h1 {
     margin: 0 0 0 1vw;
     white-space: nowrap;
     width: 200vw;
-    height: 10rem;
+    height: 20vmin;
 }
 
 .disabled {
@@ -112,8 +119,35 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(to right, #9cc836a9, #00000000 100%);
+    left: 1.5vw;
+    position: absolute;
+    z-index: -99;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: hidden;
+}
+
+.parallax {
+    will-change: scroll-position;
+    transform: var(--transform);
 }
 
 h2 {
   text-align: center;
+}
+.end{
+    background-color: #9cc836a9;
+    align-items: center;
+}
+.link2 a{
+    font-size: medium;
+    text-align: center;
+    text-decoration: none;
 }
