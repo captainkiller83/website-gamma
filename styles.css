@@ -22,11 +22,8 @@ nav {
   padding: 0.5rem;
   gap: 0.5rem;
   border-bottom: solid 1px #aaa;
-  background: url("./nav.png");
-  background-repeat: no-repeat;
   min-height: 11rem;
-  background-color: lawngreen;
-  
+  background: lawngreen url("./nav.png") no-repeat;
 }
 
 nav a {
