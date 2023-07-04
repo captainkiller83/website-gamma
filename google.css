@@ -8,7 +8,7 @@
 body{
     background-color: '#d4d5d3';
     background: url(./gammahintergrund3.jpg);
-    background-position: 10px top;
+    rotate: 10px;
 
   
   }
